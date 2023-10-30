@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+      @apply box-border ;
+    }
+
+    
+}
+
+@layer components {
+  .form-control {
+    @apply relative mb-2.5 pb-5
+  }
+  .label-control{
+    @apply block mb-1.5
+  }
+  .input-control {
+    @apply bg-gray-50 border border-solid border-slate-200 rounded w-full p-2 text-sm
+  }
+  .input-control:focus {
+    @apply outline-none
+  }
+}
